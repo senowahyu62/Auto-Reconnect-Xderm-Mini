@@ -1,0 +1,18 @@
+#!/bin/bash
+#!/bin/sh
+host=103.101.3.147
+ip=$(curl -m 5 ifconfig.me/ip)
+echo "IP SEKARANG :"
+echo "$ip"
+echo "IP TARGET :"
+echo "$host"
+if [ $ip = $host ]
+then
+echo "Bagus!, Anda Terhubung Ke Server $ip"
+rm -rf seno.log
+echo "net=1">>seno.log
+else
+rm -rf seno.log
+echo "Ip Tidak Cocok , xderm-mini Akan Segera Di Restart"
+echo "net=0">>seno.log
+fi

@@ -1,7 +1,7 @@
 #!/sbin/bash
 #!/bin/bash
 #setup
-rm -rf autokonek
+rm -rf /root/autokonek
 cd autokonek
 
 #download

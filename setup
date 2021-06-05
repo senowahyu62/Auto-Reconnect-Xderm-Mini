@@ -2,6 +2,7 @@
 #!/bin/bash
 #setup
 rm -rf /root/autokonek
+mkdir autokonek
 cd autokonek
 
 #download

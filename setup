@@ -2,8 +2,8 @@
 #!/bin/bash
 #setup
 rm -rf /root/autokonek
-mkdir autokonek
-cd autokonek
+mkdir /root/autokonek
+cd /root/autokonek
 
 #download
 wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/main/core

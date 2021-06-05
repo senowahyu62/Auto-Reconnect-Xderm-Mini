@@ -1,0 +1,14 @@
+#!/bin/bash
+#!/bin/sh
+bash core
+net=$(grep net seno.log)
+if [ $net = net=1 ]
+then
+echo "Anda Terhubung Ke Internet"
+else
+echo "Anda Tidak Terhubung Ke Internet, xderm-mini Akan Segera Di Restart"
+cd /www/xderm/
+bash xderm-mini stop
+bash xderm-mini start
+echo "ok"
+fi

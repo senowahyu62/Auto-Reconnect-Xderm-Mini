@@ -1,7 +1,0 @@
-#!/bin/bash
-rm -f /www/xderm/hasil
-echo "#!/bin/bash">>hasil
-echo "#!/bin/sh">>hasil
-grep host= /www/xderm/config.txt>>hasil
-cat bahan>>hasil
-chmod +x hasil

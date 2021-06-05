@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Berjalan Pada$(date)">>init.log
+
+while true
+do
+    bash post;
+done

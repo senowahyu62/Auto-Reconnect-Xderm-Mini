@@ -1,7 +1,7 @@
 #!/bin/bash
 #!/bin/sh
 host=103.101.3.147
-ip=$(curl -m 5 ifconfig.me/ip)
+ip=$(curl -m 10 ifconfig.me/ip)
 echo "IP SEKARANG :"
 echo "$ip"
 echo "IP TARGET :"

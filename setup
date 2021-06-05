@@ -11,9 +11,9 @@ wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/mai
 wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/main/post
 
 #chmod
-chmod +x core
-chmod +x init
-chmod +x post
+chmod +x /root/autokonek/core
+chmod +x /root/autokonek/init
+chmod +x /root/autokonek/post
 
 #crontab
 cron=$(ls /etc/crontabs/)

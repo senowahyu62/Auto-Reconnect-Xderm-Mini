@@ -1,0 +1,21 @@
+#!/sbin/bash
+#!/bin/bash
+#setup
+rm -rf autokonek
+cd autokonek
+
+#download
+wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/main/core
+wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/main/init
+wget https://raw.githubusercontent.com/senowahyu62/Auto-Reconnect-Xderm-Mini/main/post
+
+#chmod
+chmod +x core
+chmod +x init
+chmod +x post
+
+#crontab
+cron=$(ls /etc/crontabs/)
+echo "5 0 * * * /root/autokonek/init">>/etc/crontabs/$cron
+cat /etc/crontabs/$cron                                               
+#done
